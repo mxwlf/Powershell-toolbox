@@ -18,7 +18,7 @@ Win8SDK
 SilverLight_Developer_Kit
 WindowsPhone80
 #>
-#cinst VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
+cinst VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
 
 #Installing dev tools
 cinst notepadplusplus
@@ -40,3 +40,6 @@ cinst 7zip.install
 cinst winrar
 cinst vmwareplayer
 cinst keepass
+cinst windirstat
+
+#TODO: find out how to install chrome tools such as POSTMAN
