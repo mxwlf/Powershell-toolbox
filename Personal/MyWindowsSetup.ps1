@@ -1,4 +1,7 @@
-﻿#Install Chocolately http://chocolatey.org to enable installations
+﻿
+#This script was tested in a Windows 8.1 installation hosted on VmWare Player. Your mileage may vary.
+
+#Install Chocolately http://chocolatey.org to enable installations
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 
 #Software
@@ -7,7 +10,7 @@ cinst adobereader
 cinst spotify
 
 #Visual Studio. replace product key.
-<#available features
+<#available featuresj
 Blend
 LightSwitch
 VC_MFC_Libraries
@@ -18,7 +21,9 @@ Win8SDK
 SilverLight_Developer_Kit
 WindowsPhone80
 #>
-cinst VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK' /ProductKey:AB1CD-EF2GH-IJ3KL-MN4OP-QR5ST"
+#cinst VisualStudio2013Ultimate -InstallArguments "/Features:'WebTools Win8SDK' /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"
+
+#TODO: Resharper
 
 #Installing dev tools
 cinst notepadplusplus
