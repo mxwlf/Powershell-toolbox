@@ -1,4 +1,15 @@
-﻿Param(
+﻿<#
+  .SYNOPSIS
+  Adds a new entry in the PATH Environment variable.
+  
+  .DESCRIPTION
+  Updates the PATH environment variable with a new path entry, so commands from that location are available for lookup from CMD.
+  
+  .EXAMPLE
+  Add-PAthEnvEntry 'C:\MyCommands'
+
+  #>
+Param(
     [string]$newPath
 )
 
@@ -32,4 +43,4 @@ if( -not $pathBefore.EndsWith(';'))
 #Building and updating the final string.
 $pathUpdated = $pathBefore + $separator + $newPath
 
-Set-ItemProperty -Path $registryEntry -Name PATH –Value $pathUpdate
+Set-ItemProperty -Path $registryEntry -Name PATH –Value $pathUpdated
